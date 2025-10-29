@@ -1,3 +1,5 @@
+import { Button } from "@/components/button";
+
 interface PostProps {
     id: number,
     title: string,
@@ -17,6 +19,7 @@ export default async function Posts() {
     return (
         <div>
             <h1  className="text-center mt-5 mb-2 font-bold text-3xl">Todos os posts!</h1>
+            <Button/>
             <div className="flex flex-col gap-4 mx-2">
                 {data.posts.map(post => (
                     <div key={post.id} className="bg-gray-200 p-4 rounded-md">
